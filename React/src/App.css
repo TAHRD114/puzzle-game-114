@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.button{
+  width : 100px; 
+  height: 30px;
+  text-align:center;
+  margin-bottom:5px;
+  cursor:pointer;
+  line-height:30px;
+  margin-right:10px;
+  background-color : #4D6C81;
+  color : white;
+  border-radius:5px;
+  float:left;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  padding-right: 40px;
+}
+
+.status{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.puzzle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(3, 150px); 
+  grid-template-rows: repeat(3, 150px); 
+}
+
+.target-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px; 
+  height: 450px;
+  margin: 0 auto; 
+}
+
+.tile {
+  width: 150px; 
+  height: 150px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../logo2.png'); 
+  background-size: 450px 450px; 
+  cursor: pointer;
+  transition: transform 0.2s; 
+}
+
+.tile.movable:hover {
+  transform: scale(1.1); 
+}
+
+.tile.empty {
+  background-color: transparent; 
+  background-image: none; 
+}
+
+.target-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.congrats-message {
+  color: green;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
